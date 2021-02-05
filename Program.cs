@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "72dfb7d9260c4251a08e12163ef39d16");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{{key}}");
 
             var uri = "https://southcentralus.api.cognitive.microsoft.com/face/v1.0/persongroups/briangroup/persons?" + queryString;
 
@@ -75,7 +75,6 @@ namespace WindowsFormsApp1
 
             // Request body
             string result;
-            //byte[] byteData = Encoding.UTF8.GetBytes("{" + "\"name\":\"curry\",\"userData\":\"[\'curry\',\'32\',\'male\']\"}");
             byte[] byteData = Encoding.UTF8.GetBytes("{\"name\":\"tzuyu\",\"userData\":\"[\'tzuyu\',\'21\',\'female\']\"}");
 
             using (var content = new ByteArrayContent(byteData))
@@ -94,7 +93,7 @@ namespace WindowsFormsApp1
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "72dfb7d9260c4251a08e12163ef39d16");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{{key}}");
 
             // Request parameters
             queryString["detectionModel"] = "detection_01";
@@ -123,7 +122,7 @@ namespace WindowsFormsApp1
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "72dfb7d9260c4251a08e12163ef39d16");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{{key}}");
 
             var uri = "https://southcentralus.api.cognitive.microsoft.com/face/v1.0/persongroups/briangroup/train?" + queryString;
 
@@ -149,7 +148,7 @@ namespace WindowsFormsApp1
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "72dfb7d9260c4251a08e12163ef39d16");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{{key}}");
 
             var uri = "https://southcentralus.api.cognitive.microsoft.com/face/v1.0/persongroups/briangroup/training?" + queryString;
 
@@ -166,7 +165,7 @@ namespace WindowsFormsApp1
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "72dfb7d9260c4251a08e12163ef39d16");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{{key}}");
 
             // Request parameters
             queryString["returnFaceId"] = "true";
@@ -205,7 +204,7 @@ namespace WindowsFormsApp1
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "72dfb7d9260c4251a08e12163ef39d16");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{{key}}");
 
             var uri = "https://southcentralus.api.cognitive.microsoft.com/face/v1.0/identify?" + queryString;
 
@@ -251,7 +250,7 @@ namespace WindowsFormsApp1
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "72dfb7d9260c4251a08e12163ef39d16");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{{key}}");
 
             var uri = "https://southcentralus.api.cognitive.microsoft.com/face/v1.0/persongroups/briangroup/persons/a6ee5ce6-a209-4f79-9d97-1e58dba4f464?" + queryString;
             string result;
@@ -267,7 +266,7 @@ namespace WindowsFormsApp1
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "72dfb7d9260c4251a08e12163ef39d16");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{{key}}");
 
             var uri = "https://southcentralus.api.cognitive.microsoft.com/face/v1.0/persongroups/briangroup/persons/e312b664-3506-4ccc-8c5d-9cbc7e4767e9?" + queryString;
             string result;
@@ -283,7 +282,7 @@ namespace WindowsFormsApp1
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
             // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "72dfb7d9260c4251a08e12163ef39d16");
+            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "{{key}}");
 
             // Request parameter
             var uri = "https://southcentralus.api.cognitive.microsoft.com/face/v1.0/persongroups/briangroup/persons?" + queryString;
